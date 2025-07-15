@@ -1,0 +1,383 @@
+:root{
+    --brand :#473C38;
+    --primary :#C2B19C;
+    --secondary :#B2935B;
+    --light :#F0F1F0;
+    --fonte-principal :'Roboto', sans-serif;
+    --fonte-destaque :'Playfair Display', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fonte-principal),var(--fonte-destaque);
+    overflow-x: hidden;
+}
+
+h1, h2{
+    font-family: var(--fonte-destaque);
+}
+
+p{
+    font-family: var(--fonte-principal);
+}
+
+a{
+    text-decoration: none;
+}
+
+#quem-somos, #catalogo, #contato{
+    scroll-margin-top: 150px;
+}
+
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header{
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu a{
+    font-family: var(--fonte-destaque);
+    font-size: 16px;
+    margin-left: 66px;
+    color: var(--brand);
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.hero{
+    background-color: var(--brand);
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.hero .container{
+    display: flex;
+    margin-top: 23px;
+    margin-bottom: 33px;
+}
+
+.hero .conteudo{
+    color: #ffffff;
+
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 16px;
+    margin-right: 122px;
+}
+
+.hero p{
+    margin-top: 0;
+    margin-bottom: 26px;
+    margin-right: 316px;
+    line-height: 130%;
+}
+
+.hero .btn{
+    background-color: var(--primary);
+    padding: 11px 50px 11px 50px;
+    border-radius: 5px;
+    color: var(--brand);
+}
+
+.hero .btn:hover{
+    background-color: var(--secondary);
+    color: var(--light);
+    transition: 0.5s;
+}
+
+.hero img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fabrica{
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.fabrica .container{
+    display: flex;
+}
+
+.fabrica .conteudo{
+    color: var(--brand);
+    margin-top: 111px;
+    margin-bottom: 115;
+    margin-right: 130px;
+    display: block;
+}
+
+.fabrica h1{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 25px;
+}
+
+.fabrica p{
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 130%;
+    color: #666666;
+}
+
+.fabrica .btn{
+    background-color: var(--brand);
+    padding: 11px 50px 11px 50px;
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.fabrica .btn:hover{
+    background-color: var(--secondary);
+    color: var(--light);
+    transition: 0.5s;
+}
+
+.madeiras{
+    background-color: var(--light);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.madeiras .container{
+     color: var(--brand);
+}
+
+.madeiras h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flexcards{
+    display: flex;
+    gap: 24px;
+    text-align: center;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.card h2{
+    font-size: 24px;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+
+.card p{
+    color: #666666;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card .btn{
+    background-color: var(--brand);
+    padding: 8px 60px 8px 60px;
+    border-radius: 5px;
+    color: var(--light);
+    
+}
+
+.card .btn:hover{
+    background-color: var(--secondary);
+    color: var(--light);
+    transition: 0.5s;
+}
+
+.comentario .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.comentario h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--brand);
+}
+
+.comentario p{
+    color: #666666;
+}
+
+.contato{
+    background-color: var(--brand);
+}
+
+.contato .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contato h2{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.contato p{
+    color: var(--light);
+}
+
+.redes .icons{
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+@media(max-width:600px){
+
+
+    .hero .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    
+    .hero h1{
+        font-size: 32px;
+        margin-right: 0;
+    }
+
+    .hero p{
+        margin-right: 0;
+    }
+    
+    .hero .image{
+        margin-top: 65px;
+    }
+
+    .menu{
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
+        background-color: var(--secondary);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .show{
+        transform: translateX(0);
+    }
+    
+    .menu a{
+        display: block;
+        margin: 0;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-bottom: 1px solid var(--brand);
+    }
+
+    .barra{
+        width: 40px;
+        height: 3px;
+        background-color: var(--brand);
+        margin-bottom: 3px;
+    }
+
+     .flexcards{
+        flex-direction: column;
+        row-gap: 24px;
+        align-items: center;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card{
+        max-width: 500px;
+    }
+
+    .fabrica .image{
+        display: none;
+    }
+    
+    .fabrica .conteudo{
+        margin-right: 0;
+    }
+
+    .fabrica h1{
+        font-size: 28px;
+    }
+
+    .madeiras .container{
+        max-width: 356px;
+    }
+
+    .madeiras h1{
+        font-size: 28px;
+    }
+
+    .comentario h1{
+        font-size: 24px;
+    }
+
+    .contato .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contato h2{
+    font-size: 24px;
+    }
+
+    .contato p{
+        margin-bottom: 50px;
+    }
+}
